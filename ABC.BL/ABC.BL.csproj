@@ -54,7 +54,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="ObiektyWstęp.md" />
-    <None Include="RelacjeMiedzyObiektami.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RelacjaTypuUzywa.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
