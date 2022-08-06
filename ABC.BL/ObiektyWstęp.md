@@ -21,7 +21,6 @@ Ponadto
 
 //..lub 
 
-
 public int KlientId { get; private set; }
 
          public Klient(int klientid)
