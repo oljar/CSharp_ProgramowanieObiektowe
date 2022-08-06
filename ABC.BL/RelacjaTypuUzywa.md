@@ -1,4 +1,8 @@
-﻿1) Relacja "UŻYWA""  -  Jedna klasa używa innej klasy . RepozytoriumKlienta używa obiektu (instancji) klient z klasy Klinet.
+﻿##1) Relacja "UŻYWA""  -  Jedna klasa używa innej klasy . RepozytoriumKlienta używa obiektu (instancji) klient z klasy Klinet.##
+**inaczej relacja WSPÓŁPRACY**
+
+*RELACJA WSPÓŁPRACY -typu "Używa" Polega na tym że w klasie A jest używana  instancja klasy B 
+
 Używa aby wypełnić podczas pobierania danych i serializować podczas zapisu.
 
 Metoda POBIERZ  wywołała instancję obiektu klasy Klient i  przypisała jej właściwościom dane
