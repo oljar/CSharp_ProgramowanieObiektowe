@@ -58,5 +58,8 @@
   <ItemGroup>
     <None Include="RelacjaTypuUzywa.md" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="RelacjaTypuMa-Kompozycja.md" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
