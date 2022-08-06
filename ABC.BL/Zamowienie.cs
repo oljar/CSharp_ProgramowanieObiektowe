@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ABC.BL
 {
@@ -14,7 +15,18 @@ namespace ABC.BL
         }
 
         public int ZamowienieId { get; private set; }
+
+
         public DateTimeOffset? DataZamowienia { get; set; }
+
+        public List<PozycjaZamowienia> pozycjaZamowienie { get; set; }
+
+        public int KlientId { get; set; }  // Zmówienie będzie zawierało tylko numer Klienta nie obiekt
+
+        public int AdresDostawyId { get; set; }  // Zmówienie będzie zawierało tylko numer Klienta nie obiekt
+
+
+
 
         /// <summary>
         /// Pobieramy jedno zamowienie
@@ -26,6 +38,8 @@ namespace ABC.BL
             // Kod, który pobiera zdefiniowane zamowienie
             return new Zamowienie();
         }
+
+
 
         /// <summary>
         /// Zapisujemy biezace zamowienie

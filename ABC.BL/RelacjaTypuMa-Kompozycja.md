@@ -1,9 +1,10 @@
 ﻿
-2) Kompozycja - relacja typu "MA". 
+### 2) Kompozycja - relacja typu "MA". ###
+
+## Relacja kompozycji 01 Własność obiektu  z obiektem ##
 
 
-
-Jeden obiekt ma inny obiekt. Obiekty mogą składać się z innych obiektów. 
+**Jeden obiekt posiada inny obiekt. Obiekty mogą składać się z innych obiektów.**
 Zamówienie ma Klienta
 Zamówienie ma Adres Klienta
 Zamówienie ma Adres Wysyłki
@@ -34,6 +35,21 @@ obiekt adresRepository został stworzony w konstruktorze klasy KlientRepository
         {
             adresRepository = new AdresRepository();
         }
+////
+
+## Relacja kompozycji  02  własność obiektu  z identyfikatorem ##
+
+***Pozwala to na minimalizację sprzężenia również zapis jest prostszy.*** 
+
+W klasie Zamowienie zostały wstawione dwie własności :
+
+public int KlientId { get; set; }
+
+public int AdresDostawyId { get; set; }
+
+Należy zbudować klasy :
+A) Wyświetlanie zamówienia
+B) Wyświetlanie Pozycji Zamowienia
 
 
 ////
@@ -45,3 +61,5 @@ obiekt adresRepository został stworzony w konstruktorze klasy KlientRepository
 
 
  Nie ma Pozycji Zamównienia bez Zamówienia.
+
+ 
