@@ -33,7 +33,6 @@ namespace ABC.BLTEST
             Assert.AreEqual(oczekiwania.Email, aktualna.Email);
             Assert.AreEqual(oczekiwania.Imie, aktualna.Imie);
             Assert.AreEqual(oczekiwania.Nazwisko, aktualna.Nazwisko);
-
         }
 
         [TestMethod]

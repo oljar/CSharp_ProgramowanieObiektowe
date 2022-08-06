@@ -28,6 +28,71 @@ namespace ABC.BL
             return zamowienie;
         }
 
+
+        public WyswietlanieZamowienia PobierzZamowienieDoWyswietlenia(int zamowienieId)
+        {
+            WyswietlanieZamowienia wyswietlanieZamowienia = new WyswietlanieZamowienia();
+
+            // Kod, który zdefiniuje pola zamowienie
+
+            // Tymczasowe dane 
+
+            if (zamowienieId == 10)
+            {
+                wyswietlanieZamowienia.Imie = "Jarek";
+                wyswietlanieZamowienia.Nazwisko = "Zegarek";
+                wyswietlanieZamowienia.DataZamowienia = new DateTimeOffset(2018, 4, 14, 10, 00, 00, new TimeSpan(7, 0, 0));
+                wyswietlanieZamowienia.AdresDostawy = new Adres()
+                {
+                    AdresTyp = 1,
+                    Ulica = "Kosmiczna",
+                    Miasto = "Katowice",
+                    KodPocztowy = "40-467",
+                    Kraj = "Polska"
+                };
+
+            }
+
+            wyswietlanieZamowienia.WyswietlaniePozycjiZamowieniaLista = new List<WyswietlaniePozycjiZamowienia>();
+
+            // Kod pobiera elementy zamowienia
+
+            // Tymczasowe dane
+
+            if (zamowienieId == 10)
+            {
+                var wyswietlaniePozycjiZamowienia = new WyswietlaniePozycjiZamowienia()
+                {
+
+                    NazwaProduktu = "Krzesło",
+                    IloscZamowienia = 4,
+                    CenaZakupu = 119.77M
+
+                };
+                wyswietlanieZamowienia.WyswietlaniePozycjiZamowieniaLista.Add(wyswietlaniePozycjiZamowienia);
+
+
+                wyswietlaniePozycjiZamowienia = new WyswietlaniePozycjiZamowienia()
+                {
+
+                    NazwaProduktu = "Stolik",
+                    IloscZamowienia = 7,
+                    CenaZakupu = 249M
+
+                };
+                wyswietlanieZamowienia.WyswietlaniePozycjiZamowieniaLista.Add(wyswietlaniePozycjiZamowienia);
+
+
+            }
+            return wyswietlanieZamowienia;
+        }  
+        // Zwracam obiekt z zamówienim i wszystkimi danymi kienta
+
+
+
+
+
+
         /// <summary>
         /// Zapisujemy biezace zamowienie
         /// </summary>

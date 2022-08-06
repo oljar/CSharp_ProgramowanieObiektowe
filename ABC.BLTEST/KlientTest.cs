@@ -52,7 +52,6 @@ namespace ABC.BLTEST
                 Assert.AreEqual("Tomasz", aktualna);
             }
 
-
         [TestMethod]
         public void StaticTest()
 

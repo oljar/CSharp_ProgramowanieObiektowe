@@ -1,7 +1,7 @@
 ﻿
 ### 2) Kompozycja - relacja typu "MA". ###
 
-## Relacja kompozycji 01 Własność obiektu  z obiektem ##
+## A)   Relacja kompozycji 01 Własność przy pomocy ODWOŁANIA ##
 
 
 **Jeden obiekt posiada inny obiekt. Obiekty mogą składać się z innych obiektów.**
@@ -37,7 +37,7 @@ obiekt adresRepository został stworzony w konstruktorze klasy KlientRepository
         }
 ////
 
-## Relacja kompozycji  02  własność obiektu  z identyfikatorem ##
+## B)   Relacja kompozycji  przy pomocy IDENTYFIKATORA ##
 
 ***Pozwala to na minimalizację sprzężenia również zapis jest prostszy.*** 
 
@@ -48,8 +48,25 @@ public int KlientId { get; set; }
 public int AdresDostawyId { get; set; }
 
 Należy zbudować klasy :
-A) Wyświetlanie zamówienia
-B) Wyświetlanie Pozycji Zamowienia
+A) WyświetlanieZamówienia
+B) WyświetlaniePozycjiZamowienia
+
+Klasa  WyświetlanieZamówienia  używa instancji listy klasy WyświetlaniePozycjiZamówienia  definiując listę -kompozycja 
+
+Klasy WyśwtlanieZamówenia i WyświetlaniePozycjiZamówienia są napisane w celu łatwego oddania obiektu gdzie parametrem jest - zamowienieId
+      
+{
+    public WyswietlanieZamowienia PobierzZamowienieDoWyswietlenia(int zamowienieId)
+
+    {
+        WyswietlanieZamowienia wyswietlanieZamowienia = new WyswietlanieZamowienia();
+        {
+            ...
+        }
+        return wyswietlanieZamowienia;
+    
+    }
+)
 
 
 ////

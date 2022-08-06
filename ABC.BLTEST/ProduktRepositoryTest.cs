@@ -16,7 +16,6 @@ namespace  ABC.BLTEST
                 NazwaProduktu = "Klocki",
                 Opis = "Klocki do zabawy dla dieci powyżej 3 lat",
                 AktualnaCena = 119.99M
-
             };
 
             //Act
