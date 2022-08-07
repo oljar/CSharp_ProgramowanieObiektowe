@@ -56,6 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="ObiektyWstęp.md" />
+    <None Include="Techniki ponownego wykorzystania kodu.md" />
   </ItemGroup>
   <ItemGroup>
     <None Include="RelacjaTypuUzywa.md" />
