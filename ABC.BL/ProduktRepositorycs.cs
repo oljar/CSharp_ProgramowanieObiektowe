@@ -32,10 +32,27 @@ namespace ABC.BL
         /// Zapisujemy biezacy produkt
         /// </summary>
         /// <returns></returns>
-        public bool Zapisz()
+        public bool Zapisz(Produkt produkt)
         {
             // Kod, który zapisuje zdefiniowany produkt
-            return true;
+
+            var sukces = true;
+            
+            if (produkt.MaZmiany && produkt.DaneSaPrawidlowe)
+            {
+                
+                    if ( produkt.JestNowy)
+                    {
+                        // wywolujemy insert  - procedura składowaną insert
+                    }
+                    else
+                    {
+                    // wywolujemy update  - procedura składowaną update
+                }
+
+            }
+
+            return sukces;
         }
 
 

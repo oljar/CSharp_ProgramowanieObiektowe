@@ -2,7 +2,7 @@
 
 namespace ABC.BL
 {
-    public class Klient
+    public class Klient : KlasaBazowa
     {
 
         // this(0) - powoduje że zostanie wywołany konstruktor z parametrem . Co pozwala na otrzymanie wartości początkowej listy o typie lista.
@@ -76,7 +76,7 @@ namespace ABC.BL
         /// Sprawdzamy poprawność wartości właściwości (wymaganych)
         /// </summary>
         /// <returns></returns>
-        public bool Zwaliduj()
+        public override bool Zwaliduj()
         {
             var poprawne = true;
 
@@ -92,28 +92,11 @@ namespace ABC.BL
         /// Zapisujemy obecnego klienta
         /// </summary>
         /// <returns></returns>
-        public bool Zapisz()
-        {
-            // Kod, który zapisuje zdefiniowanego klienta
-            return true;
-        }
+  
 
-        /// <summary>
-        /// Pobieramy jednego klienta.
-        /// </summary>
-        public Klient Pobierz(int klientId)
+        public override string ToString()
         {
-            // kod, który pobiera określonego klienta
-            return new Klient();
-        }
-
-        /// <summary>
-        /// Pobieramy wszystkich klientów.
-        /// </summary>
-        public List<Klient> Pobierz()
-        {
-            // Kod, który pobiera wszystkich klientów
-            return new List<Klient>();
+            return ImieNazwisko;
         }
     }
 }

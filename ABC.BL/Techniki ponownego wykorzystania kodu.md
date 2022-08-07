@@ -6,4 +6,6 @@
 
 3) Komponenty wielokrotnego użytku
 
-Kod powinno się raz przetestować , raz zaktualizować , raz poprawić 
+Kod powinno się raz przetestować , raz zaktualizować , raz poprawić
+
+Kopioowanie jest bardzo szkodliwym pomysłem

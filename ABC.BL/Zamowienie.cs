@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace ABC.BL
 {
-    public class Zamowienie
+    public class Zamowienie : KlasaBazowa
     {
         public Zamowienie()
         {
@@ -45,17 +45,36 @@ namespace ABC.BL
         /// Zapisujemy biezace zamowienie
         /// </summary>
         /// <returns></returns>
-        public bool Zapisz()
+        public bool Zapisz(Zamowienie zamowienie)
         {
-            // Kod, który zapisuje zdefiniowane zamowienie
-            return true;
+            {
+                // Kod, który zapisuje zdefiniowany produkt
+
+                var sukces = true;
+
+                if (zamowienie.MaZmiany && zamowienie.DaneSaPrawidlowe)
+                {
+
+                    if (zamowienie.JestNowy)
+                    {
+                        // wywolujemy insert  - procedura składowaną insert
+                    }
+                    else
+                    {
+                        // wywolujemy update  - procedura składowaną update
+                    }
+
+                }
+
+                return sukces;
+            }
         }
 
         /// <summary>
         /// Sprawdzamy dane zamowienia
         /// </summary>
         /// <returns></returns>
-        public bool Zwaliduj()
+        public override bool Zwaliduj()
         {
             var poprawne = true;
 
@@ -63,6 +82,12 @@ namespace ABC.BL
                 poprawne = false;
 
             return poprawne;
+        }
+
+
+        public override string ToString()
+        {
+            return DataZamowienia.Value.Date + " (" + ZamowienieId + ")";
         }
     }
 }

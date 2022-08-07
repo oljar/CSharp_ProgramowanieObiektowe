@@ -18,10 +18,27 @@ namespace ABC.BL
         /// Zapisujemy obecnego klienta
         /// </summary>
         /// <returns></returns>
-        public bool Zapisz()
-        {
-            // Kod, który zapisuje zdefiniowanego klienta
-            return true;
+        public bool Zapisz(Klient klient)
+        
+        {// Kod, który zapisuje zdefiniowany produkt
+
+            var sukces = true;
+
+            if (klient.MaZmiany && klient.DaneSaPrawidlowe)
+            {
+
+                if (klient.JestNowy)
+                {
+                    // wywolujemy insert  - procedura składowaną insert
+                }
+                else
+                {
+                    // wywolujemy update  - procedura składowaną update
+                }
+
+            }
+
+            return sukces;
         }
 
         /// <summary>
