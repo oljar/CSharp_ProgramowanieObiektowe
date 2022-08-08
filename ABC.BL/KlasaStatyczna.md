@@ -1,0 +1,1 @@
+﻿Jeśli klasa jest statyczna to również metoda musi być statyczna.
