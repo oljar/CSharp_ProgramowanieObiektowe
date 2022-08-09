@@ -13,6 +13,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testy", "Testy", "{AD866849
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "commonTest", "commonTest\commonTest.csproj", "{95B73E8F-C90E-48D6-8B70-7A374D15D296}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementy rozwiązania", "Elementy rozwiązania", "{030261C8-F7B2-4502-BEF8-C2505A4E67A5}"
+	ProjectSection(SolutionItems) = preProject
+		Metody Rozszerzeń a Klasy Statyczne.md = Metody Rozszerzeń a Klasy Statyczne.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
