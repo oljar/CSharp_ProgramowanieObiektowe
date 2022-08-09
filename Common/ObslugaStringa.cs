@@ -3,8 +3,8 @@
 namespace Common
 {
     public static class ObslugaStringa
-    {
-        public static string  WstawSpacje(string zrodlo)
+    {   //  this oraz klasą  statyczna i metoda statyczna powodują że metoda jest rozszeżona
+        public static string  WstawSpacje(this string zrodlo)
         {
 
             string wynik = string.Empty;

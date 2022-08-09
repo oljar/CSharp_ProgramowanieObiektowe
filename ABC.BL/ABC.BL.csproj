@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Biblioteka wielokrotnego użytku - Kklasa ogólnego przeznaczenia .md" />
+    <None Include="MetodaRozszezenia.md" />
     <None Include="ObiektyWstęp.md" />
     <None Include="Techniki ponownego wykorzystania kodu.md" />
     <None Include="ToString%28%29_ Dziedziczenie-Obiekty-teoria.md" />

@@ -23,9 +23,12 @@ namespace ABC.BL
 
         public string NazwaProduktu
         {
-            get {
-               
-                    return ObslugaStringa.WstawSpacje(_NazwaProduktu); }
+            get
+            {
+                //Metoda rozszerzenia Wstaw Spację
+                return _NazwaProduktu.WstawSpacje();
+
+            }
             set { _NazwaProduktu = value; }
         }
         /// <summary>
